@@ -16,7 +16,6 @@ for n in range(31):
           print(n, 'is the magic number')
     continue
     print(n)
-    if 
     print(n, 'is the magic number')
 
 
