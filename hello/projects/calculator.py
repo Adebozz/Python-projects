@@ -6,7 +6,7 @@ def add_numbers(*args):
     print(total)
 
 add_numbers(3)
-add_numbers(3,32)
+add_numbers(3,32,54,67,78)
 add_numbers(3,43,54,87,97,8765)
 
 # unpacking arguments
