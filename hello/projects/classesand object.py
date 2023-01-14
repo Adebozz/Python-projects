@@ -15,6 +15,6 @@ enemy1 = Enemy()
 enemy2 = Enemy()
 
 enemy1.attack()
-enemy2.attack()
+enemy1.attack()
 enemy1.checkLife()
 enemy2.checkLife()
