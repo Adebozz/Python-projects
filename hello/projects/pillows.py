@@ -10,23 +10,34 @@ img.show()
 cropped_img.show()
 
 #combine images
-sister = Image.open("")
-girl = Image.open("")
+# sister = Image.open("")
+# girl = Image.open("")
 
-area = [100,100,300,500]
-sister.paste(girl, area)
+# area = [100,100,300,500]
+# sister.paste(girl, area)
 
-r,g,b = sister.split()
-sister.show()
-r.show()
+# r,g,b = sister.split()
+# sister.show()
+# r.show()
 
-new_img = Image.merge("RBG", (r,b,g))
-new_img.show()
+# new_img = Image.merge("RBG", (r,b,g))
+# new_img.show()
 
 #awesome merge effect
-ade = Image.open("")
-r1, g1, b1 = sister.split()
-r2, g2, b2 = ade.split()
-new_img = Image.merge("RBG", (r1,b1,g1))
-new_img = Image.merge("RBG", (r2,b2,g2))
-new_img.show()
+# ade = Image.open("")
+# r1, g1, b1 = sister.split()
+# r2, g2, b2 = ade.split()
+# new_img = Image.merge("RBG", (r1,b1,g1))
+# new_img = Image.merge("RBG", (r2,b2,g2))
+# new_img.show()
+
+#basic transformstion
+baby = Image.open("883.jpg")
+square_baby = baby.resize((250, 250))
+flip_baby = baby.transpose(Image.FLIP_LEFT_RIGHT)
+spin_baby = baby.transpose(Image.ROTATE_90)
+
+baby.show()
+square_baby.show()
+flip_baby.show()
+spin_baby.show()
