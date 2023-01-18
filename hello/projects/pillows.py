@@ -33,11 +33,16 @@ cropped_img.show()
 
 #basic transformstion
 baby = Image.open("883.jpg")
-square_baby = baby.resize((250, 250))
-flip_baby = baby.transpose(Image.FLIP_LEFT_RIGHT)
-spin_baby = baby.transpose(Image.ROTATE_90)
+# square_baby = baby.resize((250, 250))
+# flip_baby = baby.transpose(Image.FLIP_LEFT_RIGHT)
+# spin_baby = baby.transpose(Image.ROTATE_90)
 
-baby.show()
-square_baby.show()
-flip_baby.show()
-spin_baby.show()
+# baby.show()
+# square_baby.show()
+# flip_baby.show()
+# spin_baby.show()
+
+black_white = baby.convert("L")
+black_white.show()
+
+
