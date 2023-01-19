@@ -11,6 +11,15 @@ class User:
 users = [
     User('Bucky', 43),
     User('Saly', 5),
-    User('Mareez' 61),
-    User()
+    User('Mareez', 61),
+    User('Adeolu', 2),
+    User('Ife', 15),
+    User('Amaka', 9)
 ]
+
+for User in users:
+    print(User)
+
+print('-----')
+for User in sorted(users, key=attrgetter('name')):
+    print(User)
