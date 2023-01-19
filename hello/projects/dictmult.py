@@ -9,6 +9,6 @@ users = [
     {'fname': 'Mariam', 'lname': 'Adeolu'},
 ]
 
-for x in sorted(users, key=itemgetter('fname')):
-    for y in sorted(users, key=itemgetter('lname')):
-        print(y)
+for x in sorted(users, key=itemgetter('fname', 'lname')):
+    print(x)
+
