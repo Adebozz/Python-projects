@@ -9,5 +9,8 @@ class User:
         return self.name + ":" + str(self.user_id)
 
 users = [
-    User
+    User('Bucky', 43),
+    User('Saly', 5),
+    User('Mareez' 61),
+    User()
 ]
