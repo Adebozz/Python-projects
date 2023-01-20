@@ -6,5 +6,9 @@
 {"tag": "goodbye",
 "patterns": ["cya", "see you later", "Goodbye", "I am leaving", "Have a good day", "bye", "cao", "see ya"],
 "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"]
-},
+}, 
+{"tag": "name",
+"patterns": ["what is your name", "What should i call you", "Whats your name", "who are you", "can you tell me your name"],
+"responses": ["You can call me Nearal.", "I'm Nearal", "I am Neaural the assistant of Adeboss"]
+}
 ]}
