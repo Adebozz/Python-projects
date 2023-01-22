@@ -23,3 +23,4 @@ for intent in intents['intents']:
     for pattern in intent['patterns']:
         word_list = nltk.tokenize(pattern)
         words.append(word_list)
+        documents.append((word_list), intent['tag'])
