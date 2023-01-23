@@ -23,4 +23,11 @@ for intent in intents['intents']:
     for pattern in intent['patterns']:
         word_list = nltk.tokenize(pattern)
         words.append(word_list)
-        documents.append((word_list), intent['tag'])
+        documents.append((word_list, intent['tag']))
+        if intent['tag'] not in classes:
+            classes.append(intent['tag'])
+
+words = [lemmatizer.lemmatize(words) for word in words if words not in ignore_letters]
+words = sorted(set(words))
+
+print(words)
