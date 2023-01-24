@@ -56,4 +56,5 @@ while True:
     message = input("")
     ints = predict_class(message)
     res = get_response(ints, intents)
-    print(res)
+    print(res) 
+    
