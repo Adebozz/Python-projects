@@ -31,7 +31,14 @@ def cheak_all_messages(message):
         highest_prob_list[bot_response] = message_probability(message, list_of_words, single_response, required_words)
 
     # Response ------------------------------------
-    response('Hello!', ['hello', 'hi', 'sup', 'hey', 'heyo'])
+    response('Hello!', ['hello', 'hi', 'sup', 'hey', 'heyo'], single_response=True)
+    response('I\'m doing fine, and you?', ['how', 'are', 'you', 'doing'], required_words=['how'])
+    response('Thank you!', ['I', 'love', 'code', 'palace'])
+
+    best_match = max(highest_prob_list, key=highest_prob_list.get)
+    print(highest_prob_list)
+
+    return best_match
 
 def get_response(user_input):
     split_message = re.split(r'\s+|[,;?!.-]\s*', user_input.lower())
