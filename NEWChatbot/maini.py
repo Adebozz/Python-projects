@@ -33,7 +33,7 @@ def check_all_messages(message):
     # Response ------------------------------------
     response('Hello!', ['hello', 'hi', 'sup', 'hey', 'heyo'], single_response=True)
     response('I\'m doing fine, and you?', ['how', 'are', 'you', 'doing'], required_words=['how'])
-    response('Thank you!', ['I', 'love', 'code', 'palace'], required_words=['love'])
+    response('Thank you!', ['I', 'love', 'you'], required_words=['love'])
     response('Thank you!', ['I', 'love', 'code', 'palace'], required_words=['love'])
 
     response(long.R_EATING, ['what', 'you', 'eat'], required_words=['you', 'eat'])
